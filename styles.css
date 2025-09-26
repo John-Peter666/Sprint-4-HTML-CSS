@@ -1,18 +1,53 @@
+#carro{
+    display: flex;
+    justify-content: center;
+    
+}
+
 .rodape{
     display: flex;
-    background-color: rgb(4, 4, 158);
+    background-color: #1b357e;
     align-items: center;
+}
+
+footer a{
+    position: relative;
+    left: 15px;
+}
+
+#redes-sociais{
+    position: relative;
+    color: white;
+    left: 10px;
+    font-family: sans-serif;
 }
 
 .links{
     display: flex;
     justify-content: center;
     gap: 100px; 
-    top: 10px;
+    
+    margin-bottom: 30px;
+    
     
 }
 
+#mini-ford{
+    
+    height: auto;
+    margin-left: 1500px;
+}
+
+p#propaganda{
+    text-align: center;
+    font-family:sans-serif;
+    
+    color: #1b357e;
+    font-weight: bold;
+}
+
 nav a{
+    color: #1b357e;
     text-decoration: none;
     font-size: large;
     font-family: sans-serif;
