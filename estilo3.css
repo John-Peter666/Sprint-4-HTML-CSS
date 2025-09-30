@@ -1,0 +1,174 @@
+/* ================================== */
+/* ESTILOS PADRÃO            */
+/* ================================== */
+
+/* Para garantir a responsividade em todos os elementos */
+* {
+    box-sizing: border-box;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    /* Reduzindo o gap padrão para dar mais espaço */
+    gap: 50px; 
+    top: 10px;
+    margin-bottom: 30px;
+}
+
+nav a {
+    color: #1b357e;
+    text-decoration: none;
+    font-size: large;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+/* Centralizando o iframe de forma flexível */
+iframe {
+    display: block; /* Garante que o iframe ocupe seu próprio espaço */
+    width: 90%; /* Deixa o iframe com 90% da largura do contêiner */
+    max-width: 700px; /* Limita o tamanho em telas grandes */
+    margin: 10px auto; /* Centraliza horizontalmente e adiciona margem */
+}
+
+
+footer a {
+    position: relative;
+    left: 15px;
+}
+
+#redes-sociais {
+    position: relative;
+    color: white;
+    left: 10px;
+    font-family: sans-serif;
+}
+
+/* Ocultando ou ajustando o elemento #mini-ford em telas menores (assumindo que seja uma imagem decorativa grande) */
+#mini-ford {
+    height: auto;
+    /* Removendo a margem fixa para que não quebre o layout */
+    margin-left: 0; 
+}
+
+
+#carro {
+    display: flex;
+    justify-content: center;
+}
+
+.rodape {
+    display: flex;
+    background-color: #1b357e;
+    align-items: center;
+    /* Permite que os itens do rodapé empilhem quando necessário */
+    flex-wrap: wrap; 
+    padding: 10px;
+}
+
+p#propaganda {
+    text-align: center;
+    font-family: sans-serif;
+    color: #1b357e;
+    font-weight: bold;
+    width: 100%;
+}
+
+/* pagina 3  */
+.conjunto {
+    display: flex;
+    justify-content: center;
+    gap: 30px; 
+    top: 10px;
+    margin-bottom: 30px;
+    flex-direction: row; 
+    padding-bottom: 50px; 
+    padding-top: 50px;
+    padding: 50px 10px; 
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    width: 90%;
+    max-width: 400px; 
+    padding: 15px;
+}
+
+.itemformulario {
+    border-radius: 5px;
+    border: #1b357e 2px solid;
+    width: 100%;
+    padding: 8px;
+}
+
+#enviar {
+    background-color: #1b357e;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+}
+
+#enviar:hover {
+    background-color: #16306b;
+    transition: 0.5s;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+/* MEDIA QUERY (MoBILE)        */
+
+
+@media screen and (max-width: 768px) {
+    
+   
+    .links {
+        
+        flex-direction: column; 
+        gap: 10px; 
+        align-items: center; 
+        margin-bottom: 10px;
+    }
+    
+    
+    .rodape {
+        
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    
+    #mini-ford {
+        
+        display: none; 
+    }
+    
+    
+    iframe {
+        width: 100%; 
+        margin-left: auto; 
+        margin-right: auto;
+    }
+    
+    
+    .conjunto {
+        
+        flex-direction: column; 
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .formulario {
+        width: 95%; 
+    }
+}

@@ -1,56 +1,91 @@
-#carro{
-    display: flex;
-    justify-content: center;
-    
+* {
+    box-sizing: border-box;
 }
 
-.rodape{
+#carro {
+    display: flex;
+    justify-content: center;
+}
+
+.rodape {
     display: flex;
     background-color: #1b357e;
     align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
 }
 
-footer a{
+footer a {
     position: relative;
     left: 15px;
+    flex-shrink: 0;
 }
 
-#redes-sociais{
+#redes-sociais {
     position: relative;
     color: white;
     left: 10px;
     font-family: sans-serif;
 }
 
-.links{
+.links {
     display: flex;
     justify-content: center;
-    gap: 100px; 
-    
+    gap: 50px;
     margin-bottom: 30px;
-    
-    
+    padding: 0 10px;
 }
 
-#mini-ford{
-    
+#mini-ford {
     height: auto;
-    margin-left: 1500px;
+    margin-left: 0;
+    margin-bottom: 20px;
 }
 
-p#propaganda{
+p#propaganda {
     text-align: center;
-    font-family:sans-serif;
-    
+    font-family: sans-serif;
     color: #1b357e;
     font-weight: bold;
+    width: 100%;
+    padding: 10px;
 }
 
-nav a{
+nav a {
     color: #1b357e;
     text-decoration: none;
     font-size: large;
     font-family: sans-serif;
     font-weight: bold;
+}
 
+@media screen and (max-width: 768px) {
+    
+    .links {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    
+    .rodape {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #mini-ford {
+        display: none;
+    }
+    
+    footer a {
+        left: 0;
+        margin: 5px 0;
+    }
+
+    #redes-sociais {
+        left: 0;
+        margin-top: 5px;
+        text-align: center;
+        width: 100%;
+    }
 }
