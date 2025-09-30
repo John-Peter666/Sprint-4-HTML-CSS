@@ -6,7 +6,7 @@
 header{
     padding-top: 10px;
     border-bottom: 1px solid #1b357e;
-    box-shadow: 0 0 10px #16306b;
+    box-shadow: 0 0 10px #1;
 }
 
 
@@ -48,6 +48,7 @@ footer a {
     height: auto;
     margin-left: 0;
     margin-bottom: 20px;
+    margin-left: 1700px;
 }
 
 p#propaganda {
