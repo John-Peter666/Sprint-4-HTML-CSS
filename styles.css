@@ -2,6 +2,14 @@
     box-sizing: border-box;
 }
 
+
+header{
+    padding-top: 10px;
+    border-bottom: 1px solid #1b357e;
+    box-shadow: 0 0 10px #16306b;
+}
+
+
 #carro {
     display: flex;
     justify-content: center;

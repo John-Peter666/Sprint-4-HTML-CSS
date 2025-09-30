@@ -1,16 +1,21 @@
-/* ================================== */
-/* ESTILOS PADRÃO            */
-/* ================================== */
 
-/* Para garantir a responsividade em todos os elementos */
+
+
 * {
     box-sizing: border-box;
+}
+
+
+header{
+    padding-top: 10px;
+    border-bottom: 1px solid #1b357e;
+    box-shadow: 0 0 10px #16306b;
 }
 
 .links {
     display: flex;
     justify-content: center;
-    /* Reduzindo o gap padrão para dar mais espaço */
+  
     gap: 50px; 
     top: 10px;
     margin-bottom: 30px;
@@ -24,12 +29,12 @@ nav a {
     font-weight: bold;
 }
 
-/* Centralizando o iframe de forma flexível */
+
 iframe {
-    display: block; /* Garante que o iframe ocupe seu próprio espaço */
-    width: 90%; /* Deixa o iframe com 90% da largura do contêiner */
-    max-width: 700px; /* Limita o tamanho em telas grandes */
-    margin: 10px auto; /* Centraliza horizontalmente e adiciona margem */
+    display: block; 
+    width: 90%; 
+    max-width: 700px; 
+    margin: 10px auto; 
 }
 
 
@@ -45,10 +50,10 @@ footer a {
     font-family: sans-serif;
 }
 
-/* Ocultando ou ajustando o elemento #mini-ford em telas menores (assumindo que seja uma imagem decorativa grande) */
+
 #mini-ford {
     height: auto;
-    /* Removendo a margem fixa para que não quebre o layout */
+    
     margin-left: 0; 
 }
 
@@ -62,7 +67,7 @@ footer a {
     display: flex;
     background-color: #1b357e;
     align-items: center;
-    /* Permite que os itens do rodapé empilhem quando necessário */
+   
     flex-wrap: wrap; 
     padding: 10px;
 }
