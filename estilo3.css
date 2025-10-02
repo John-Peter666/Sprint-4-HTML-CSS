@@ -52,9 +52,9 @@ footer a {
 
 
 #mini-ford {
-    height: auto;
     
-    margin-left: 1700px; 
+    text-align: end;
+     
 }
 
 
@@ -63,14 +63,24 @@ footer a {
     justify-content: center;
 }
 
-.rodape {
+footer{
     display: flex;
     background-color: #1b357e;
+    justify-content: space-between;
     align-items: center;
-   
-    flex-wrap: wrap; 
-    padding: 10px;
 }
+
+footer div img{
+    width: 15%;
+}
+
+footer div{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 p#propaganda {
     text-align: center;
@@ -131,7 +141,7 @@ p#propaganda {
 }
 
 
-/* MEDIA QUERY (MoBILE)        */
+/* MEDIA QUERY (MOBILE)        */
 
 
 @media screen and (max-width: 768px) {
@@ -150,7 +160,7 @@ p#propaganda {
         
         flex-direction: column; 
         text-align: center;
-    }
+        height: 3000px;
 
     
     #mini-ford {
@@ -176,4 +186,5 @@ p#propaganda {
     .formulario {
         width: 95%; 
     }
+}
 }

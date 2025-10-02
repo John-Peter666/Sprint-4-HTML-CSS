@@ -54,12 +54,22 @@ footer a {
     justify-content: center;
 }
 
-.rodape {
+footer{
     display: flex;
     background-color: #1b357e;
+    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    padding: 10px;
+}
+
+footer div img{
+    width: 50%;
+}
+
+footer div{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 p#propaganda {
@@ -118,7 +128,7 @@ span {
 }
 
 /* MEDIA QUERIES PARA RESPONSIVIDADE EM TELAS PEQUENAS (até 768px) */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 500px) {
     
     .links {
         flex-direction: column;
@@ -127,9 +137,10 @@ span {
         margin-bottom: 10px;
     }
     
-    .rodape {
+    
+    footer{
         flex-direction: column;
-        text-align: center;
+        justify-content: space-evenly;
     }
 
     #mini-ford {

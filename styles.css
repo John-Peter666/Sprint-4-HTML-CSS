@@ -13,14 +13,26 @@ header{
 #carro {
     display: flex;
     justify-content: center;
+    width: 50%;
+    margin: 0 auto;
 }
 
-.rodape {
+footer{
     display: flex;
     background-color: #1b357e;
+    justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    flex-wrap: wrap;
+}
+
+footer div img{
+    width: 40%;
+}
+
+footer div{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer a {
@@ -68,7 +80,7 @@ nav a {
     font-weight: bold;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     
     .links {
         flex-direction: column;
